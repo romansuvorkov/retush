@@ -1,0 +1,652 @@
+body {
+    background-color: black;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    padding: 28px 15px;
+    box-sizing: content-box;
+    max-width: 11.56rem;
+    max-height: 2.25rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 3;
+}
+
+.head_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.red_letter {
+   color: red; 
+}
+
+.head_menu::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header_menu_list {
+    display: flex;
+    padding: 0;
+}
+
+.header_menu {
+    z-index: 1;
+}
+
+.header_menu_list_point {
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.intro_page {
+    background-image: url("img/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.intro_page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    opacity: 0.5;
+}
+
+.logo_intro {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 120px;
+    z-index: 2;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    z-index: 2;
+    text-align: center;
+}
+
+.header_2nd_line {
+    display: block;
+    text-align: center;
+}
+
+.advantage_container {
+    display:flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.advantage_card {
+    border: 2px solid #ffffff;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    flex-direction: column;
+    transition: border 0.4s linear;
+}
+
+.advantage_card:hover {
+    border: 2px solid red;
+}
+
+.advantage_card:hover .svg {
+    fill: red;
+}
+
+.advantage_card:hover h3 {
+    color: red;
+}
+
+.advantage_card h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    transition: color 0.4s linear;
+}
+
+.advantage_text {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.svg {
+    fill: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 25%;
+    transition: fill 0.4s linear;
+}
+
+.svg_pay {
+    width: 30%;
+}
+
+.portfolio_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio_item {
+   width: 20%; 
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+}
+
+.price_list_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price_list_item {
+    background-color: #E8E4E4;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.price_list_header {
+    background-color: #E5181D;
+    width: 100%;
+    text-align: center;
+    min-height: 150px;
+    flex-shrink: 0;
+    transition: background-color 0.4s linear;
+}
+
+.price_list_header h3 {
+    font-size: 1.5vw;
+}
+
+.price_list_item:hover .price_list_header {
+    background-color: #333;
+}
+
+.price_description {
+    color: black;
+    text-align: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.08vw;
+    font-size: 1.1vw;
+}
+
+.price_list_price {
+    font-size: 2.6vw;
+}
+
+.complementary_services_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.complementary_services_item {
+    margin: 5px;
+    padding: 10px;
+    max-width: 250px;
+}
+
+.complementary_services_item:hover .cs_price {
+    background-color: #333;
+}
+
+.cs_price {
+    display: block;
+    background-color: #E5181D;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5vw;
+    transition: background-color 0.4s linear;
+}
+
+.cs_description {
+    display: block;
+    background-color: #E8E4E4;
+    color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    line-height: 2vw;
+    padding: 10px;
+}
+
+.instructions_container {
+    background-image: url("img/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.instructions_wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    margin-top: 20vh;
+}
+
+.instructions_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.4;
+}
+
+
+.instructions_card_header {
+    background-color: #E5181D;
+    margin: 0;
+    width: 25%;
+    flex-basis: 25%;
+    min-width: 100px;
+    text-align: center;
+    transition: background-color 0.4s linear;
+    padding-top: 6vw;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+.number1::after {
+    content: "1";
+    background-color: #333;
+    position: absolute;
+    width: 4.68vw;
+    height: 4.68vw;
+    line-height: 4.68vw;
+    top: 20px;
+    right: 0;
+    transform: translateX(50%);
+    transition: background-color 0.4s linear;
+}
+
+.number2::after {
+    content: "2";
+    background-color: #333;
+    position: absolute;
+    width: 4.68vw;
+    height: 4.68vw;
+    line-height: 4.68vw;
+    top: 20px;
+    right: 0;
+    transform: translateX(50%);
+    transition: background-color 0.4s linear;
+}
+
+.number3::after {
+    content: "3";
+    background-color: #333;
+    position: absolute;
+    width: 4.68vw;
+    height: 4.68vw;
+    line-height: 4.68vw;
+    bottom: 10%;
+    right: 2.8vw;
+    transition: background-color 0.4s linear;
+}
+
+.instructions_card {
+    margin: 10px;
+    background-color: #E8E4E4;
+    z-index: 2;
+    display: flex;
+}
+
+.instructions_section2_wrapper, .instructions_section1_wrapper {
+     z-index: 1;
+}
+
+.instructions_card_text {
+    color: black;
+}
+
+.instructions_section2_wrapper .instructions_card {
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.instructions_section2_wrapper .instructions_card_header {
+    width: 10.4vw;
+    height: 10.4vw;
+    padding: 0;
+    flex-basis: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+}
+
+.instructions_section2_wrapper .instructions_card_text {
+    color: white;
+    text-align: center;
+}
+
+.instructions_card_text_wrapper {
+    margin: 15px;
+    margin-left: 3.25vw;
+    width: 80%;
+    flex-basis: 80%;
+    font-size: 1.04vw;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_contact {
+    line-height: 92px;
+}
+
+.instructions_card:hover .instructions_card_header {
+    background-color: #333;
+}
+
+.instructions_card:hover .number1::after {
+    background-color: red;
+}
+
+.instructions_card:hover .number2::after {
+    background-color: red;
+}
+
+.instructions_card:hover .number3::after {
+    background-color: red;
+}
+
+/*=====================================================*/
+/*=====================================================*/
+/*================Маленкие десткопы====================*/
+/*=====================================================*/
+/*=====================================================*/
+
+@media (min-width: 961px) and (max-width: 1600px) {
+    .advantage_container {
+        width: 85%;
+}
+
+    .advantage_card {
+        width: 35%;
+    }
+    
+    .advantage_text {
+        font-size: 1.3vw;
+    }
+    
+    .advantage_card h3 {
+        font-size: 1.8vw;
+
+    }
+    
+    .instructions_card_text_wrapper {
+        font-size: 1.3vw;
+    }
+
+    .instructions_card_header {
+        font-size: 1.8vw;
+    }
+
+}
+
+/*=====================================================*/
+/*=====================================================*/
+/*=====================================================*/
+/*=====================================================*/
+/*=====================================================*/
+
+/*=====================================================*/
+/*=====================================================*/
+/*================Планшеты=============================*/
+/*=====================================================*/
+/*=====================================================*/
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .head_menu {
+        font-size: 1.60vw;
+    }
+    
+    .logo_intro {
+        font-size: 12.5vw;
+    }
+
+    h1 {
+        font-size: 6.25vw;
+    }
+    
+    h2 {
+        font-size: 6.25vw;
+    }
+    
+    .advantage_container {
+        display:flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    
+    .advantage_card {
+        width: 40%;
+    }
+    
+    .advantage_card:nth-child(n+3) {
+        margin-top: 20px; 
+    }
+    
+    .advantage_text {
+        font-size: 2vw;
+    }
+    
+    .advantage_card h3 {
+        font-size: 2.5vw;
+    }
+    
+    .price_list_container {
+        flex-wrap: wrap;
+    }
+
+    .price_list_item {
+        width: 40%;
+    }
+    
+    .price_list_item:nth-child(n+3) {
+        margin-top: 20px; 
+    }
+    
+    .price_list_header {
+        min-height: 80px;
+    }
+    
+    .price_list_header h3 {
+        font-size: 2.5vw;
+    }
+    
+    .price_list_price {
+        font-size: 3.6vw;
+    }
+    
+    .price_description {
+        line-height: 4.5vw;
+        font-size: 2.2vw;
+    }
+    
+    .instructions_card_header {
+        min-width: 100px;
+        padding-top: 11vw;
+        font-size: 2.5vw;
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+    
+    .number1::after {
+        top: 15px;
+    }
+
+    .number2::after {
+        top: 15px;
+    }
+    
+    .number3::after {
+        top: 20px;
+        right: 0;
+        transform: translateX(50%); 
+    }
+    
+    .cs_description {
+        font-size: 2.2vw;
+        line-height: 4.5vw;
+        min-height: 110px;
+    }
+    
+    .complementary_services_item {
+        margin: 5px;
+        padding: 10px;
+        width: 50%;
+    }
+    
+    .cs_price {
+        line-height: 4.6wv;
+        font-size: 3.6vw;
+        transition: background-color 0.4s linear;
+    }
+    
+    .instructions_card_text_wrapper {
+        margin: 10px;
+        margin-left: 3vw;
+        width: 80%;
+        flex-basis: 80%;
+        font-size: 2vw;
+    }
+    
+    .instructions_wrapper {
+        width: 95%;
+        margin-top: 10vh;
+        flex-wrap: wrap;
+    }
+    
+    .instructions_section2_wrapper .instructions_card_header {
+        min-width: 100px;
+        padding-top: 11vw;
+        font-size: 2.5vw;
+        padding-left: 10px;
+        padding-right: 15px;
+        background-color: #E5181D;
+        margin: 0;
+        width: 25%;
+        flex-basis: 25%;
+        min-width: 100px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .instructions_section2_wrapper .instructions_card {
+        flex-wrap: nowrap;
+        background-color: #E8E4E4;
+    }
+    
+    .instructions_section2_wrapper {
+        width: 100%;
+    }
+    
+    .instructions_section2_wrapper .instructions_card_text {
+        color: black;
+    }
+    
+    .footer_contact {
+        line-height: 92px;
+        font-size: 1.6vw;
+    }
+    
+    .portfolio_item {
+       width: 50%; 
+    }  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
